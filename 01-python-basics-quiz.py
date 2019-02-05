@@ -7,12 +7,13 @@
 
 
 def show_excitement():
-  sentence = 0
-  init = "I am super excited for this course!"
-  combined = ""
-  while (sentence < 5):
-    sentence += 1
-    combined += init + " "
-  return combined
+    sentence = 0
+    init = "I am super excited for this course!"
+    combined = ""
+    while (sentence < 5):
+        sentence += 1
+        combined += init + " "
+    return combined
+
 
 print(show_excitement())
