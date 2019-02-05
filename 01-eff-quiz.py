@@ -3,23 +3,23 @@ a single manatee has properties like "name", "age", et cetera
 n = the number of elements in "manatees"
 m = the number of properties per "manatee" (i.e. the number of keys in a manatee dictionary)"""
 
-
+# O(n)
 def example1(manatees):
     for manatee in manatees:
-        print manatee['name']
+        print(manatee['name'])
 
-
+# O(1)
 def example2(manatees):
-    print manatees[0]['name']
-    print manatees[0]['age']
+    print(manatees[0]['name'])
+    print(manatees[0]['age'])
 
-
+# O(n*m)
 def example3(manatees):
     for manatee in manatees:
         for manatee_property in manatee:
-            print manatee_property, ": ", manatee[manatee_property]
+            print(manatee_property, ": ", manatee[manatee_property])
 
-
+# O(n^2)
 def example4(manatees):
     oldest_manatee = "No manatees here!"
     for manatee1 in manatees:
@@ -28,4 +28,4 @@ def example4(manatees):
                 oldest_manatee = manatee2['name']
             else:
                 oldest_manatee = manatee1['name']
-    print oldest_manatee
+    print(oldest_manatee)
