@@ -2,7 +2,7 @@
 
 All notes from Data Structures & Algorithms offered by Grow With Google on Udacity
 
-# Lesson 1: Introduction and Efficiency
+## Lesson 1: Introduction and Efficiency
 
 ### What is efficiency?
 * Efficiency or complexity refers to how well you are using the computer's resources to get a particular job done
@@ -18,7 +18,7 @@ All notes from Data Structures & Algorithms offered by Grow With Google on Udaci
 * Big-O is often discussed in the worst case scenario, however there is also a best case and an average case as well
 * Big-O can be used to describe space and time efficiency
 
-# Lesson 2: List-based Collections
+## Lesson 2: List-based Collections
 
 ### What is a collection?
 * A collection or container is a grouping of some variable number of data items (possibly zero) that have some shared significance to the problem being solved and need to be operated upon together in some controlled fashion
@@ -31,7 +31,7 @@ All notes from Data Structures & Algorithms offered by Grow With Google on Udaci
   * Stacks - List where last in first out applies
   * Queues - List where first in first out applies
 
-# Lesson 3 Searching and Sorting
+## Lesson 3 Searching and Sorting
 
 ### What is Binary Search?
 * Binary search essentially takes advantage of sorted arrays by initiating a comparison of the value at the middle of the array to see if the computer should search the upper or lower half of the array
