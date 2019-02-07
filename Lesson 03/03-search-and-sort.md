@@ -1,4 +1,4 @@
-# Lesson 3: Searching and Sorting
+## Lesson 3: Searching and Sorting
 
 ### What is Binary Search?
 * Binary search essentially takes advantage of sorted arrays by initiating a comparison of the value at the middle of the array to see if the computer should search the upper or lower half of the array

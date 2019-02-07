@@ -1,4 +1,4 @@
-# Lesson 2: List-based Collections
+## Lesson 2: List-based Collections
 
 ### What is a collection?
 * A collection or container is a grouping of some variable number of data items (possibly zero) that have some shared significance to the problem being solved and need to be operated upon together in some controlled fashion
