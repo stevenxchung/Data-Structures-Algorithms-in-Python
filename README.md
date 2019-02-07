@@ -1,3 +1,7 @@
+# Data-Structures-Algorithms-in-Python
+
+All notes from Data Structures & Algorithms offered by Grow With Google on Udacity
+
 # Lesson 1: Introduction and Efficiency
 
 ### What is efficiency?
