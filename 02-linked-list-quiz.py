@@ -32,11 +32,13 @@ class LinkedList(object):
         """Get an element from a particular position.
         Assume the first position is "1".
         Return "None" if position is not in the list."""
+        # Need counter since this is a linked-list to keep track
         counter = 1
         node = self.head
         if position < 1:
             return None
         while node and counter <= position:
+            # Return element if counter matches requested position
             if counter == position:
                 return node
             node = node.next
@@ -51,14 +53,21 @@ class LinkedList(object):
         counter = 1
         node = self.head
         if position > 1:
+            # Begin going through linked-list
             while node and counter < position:
+                # When true insert new element before element at position index
                 if counter == position - 1:
+                    # Points to the next node (referenced from initial element at position-1)
                     new_element.next = node.next
+                    # Points to new element (referenced from initial element at position-1)
                     node.next = new_element
                 node = node.next
                 counter += 1
+        # If position is the head node insert new element behind the head
         elif position == 1:
+            # New element's neighbor will be the old head node at a new position
             new_element.next = self.head
+            # New element will be at position 1
             self.head = new_element
 
     def delete(self, value):
@@ -66,12 +75,16 @@ class LinkedList(object):
         node = self.head
         previous = None
         while node.value != value and node.next:
+            # Points to node
             previous = node
+            # Node points to node.next
             node = node.next
         if node.value == value:
             if previous:
+                # Previous's neighbor will be node.next
                 previous.next = node.next
             else:
+                # Otherwise the head node will point to node.next
                 self.head = node.next
 
 
