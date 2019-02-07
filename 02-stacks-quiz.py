@@ -28,14 +28,19 @@ class LinkedList(object):
 
     def insert_first(self, new_element):
         "Insert new element as the head of the LinkedList"
+        # New element's right neighbor will be the current head node
         new_element.next = self.head
+        # New head node will be the new element
         self.head = new_element
 
     def delete_first(self):
         "Delete the first (head) element in the LinkedList and return it"
         if self.head:
+            # Deleted node will be the current head node
             node_deleted = self.head
+            # Node temp will be right of the deleted node
             node_temp = node_deleted.next
+            # New head will point to the node temp (shift linked-list left)
             self.head = node_temp
             return node_deleted
         else:
