@@ -5,27 +5,31 @@ using the first two letters of the string."""
 
 class HashTable(object):
     def __init__(self):
-        self.table = [None]*10000
+        self.table = [None] * 10000
 
     def store(self, string):
-        """Input a string that's stored in 
+        """Input a string that's stored in
         the table."""
+        # Use available method which is already defined in HashTable()
         hashVal = self.calculate_hash_value(string)
-        if hashVal:
-            if self.table[hashVal] != None:
-                self.table[hashVal].append(string)
-            else:
-                self.table[hashVal] = [string]
+        # Check if hashVal exists in the table
+        if self.table[hashVal] != None:
+            # hashValue already exists so append string to the array
+            self.table[hashVal].append(string)
+        else:
+            # If hashVal is not there, assign it to the string
+            self.table[hashVal] = [string]
 
     def lookup(self, string):
         """Return the hash value if the
         string is already in the table.
         Return -1 otherwise."""
         hashVal = self.calculate_hash_value(string)
-        if hashVal:
-            if self.table[hashVal] != None:
-                if string in self.table[hashVal]:
-                    return hashVal
+        # Check if hashVal exists in the table
+        if self.table[hashVal] != None:
+            # Check if string exists in the table at hashVal key
+            if string in self.table[hashVal]:
+                return hashVal
         return -1
 
     def calculate_hash_value(self, string):
