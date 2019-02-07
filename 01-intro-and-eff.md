@@ -1,7 +1,7 @@
-# Lesson 1
+# Lesson 1: Introduction and Efficiency
 
 ### What is efficiency?
-* Efficiency or complexity refers to how well you are using the computer's resources to get a particular job done.
+* Efficiency or complexity refers to how well you are using the computer's resources to get a particular job done
 * We can think about this in terms of space and time:
   * How much storage is needed?
   * How much time does it take for the job to complete?
