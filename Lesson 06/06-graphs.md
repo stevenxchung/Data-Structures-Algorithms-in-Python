@@ -26,3 +26,14 @@
 * BFS on graphs are very similar to DFS except it will look through every edge connected to a particular node before moving on
   * BFS will add new nodes to a queue
   * The efficiency for BFS on graphs are also *O(|m edges| + |n nodes|)*
+
+### What are some notable paths for graphs?
+* There are Eulerian paths:
+  * Travels through every edge in a graph at least once
+  * An Eulerian cycle traverses each edge at least once and end up at the same node
+  * Even degree - every node in the graph has an even number of edges connected
+  * Graphs can only have Eulerian cycles if they have an even degree
+  * The efficiency of Eulerian path is *O(|n edges|)*
+* There are also Hamiltonian paths:
+  * Travels through every node in a graph at least once
+  * A Hamiltonian cycle will start and end at the same node
