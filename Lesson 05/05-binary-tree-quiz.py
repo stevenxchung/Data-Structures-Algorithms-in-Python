@@ -20,13 +20,16 @@ class BinaryTree(object):
         """Print out all tree nodes
         as they are visited in
         a pre-order traversal."""
+        # Print to the end of the list
         recur_print = self.preorder_print(tree.root, '')[:-1]
         return recur_print
 
     def preorder_search(self, start, find_val):
         """Helper method - use this to create a
         recursive search solution."""
+        # First check if node exists
         if start:
+            # Check if the the value at the starting node matches, otherwise recurse
             if start.value == find_val:
                 return True
             else:
