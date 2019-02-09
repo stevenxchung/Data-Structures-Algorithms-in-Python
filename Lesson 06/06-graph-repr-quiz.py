@@ -43,7 +43,9 @@ class Graph(object):
         """Don't return a list of edge objects!
         Return a list of triples that looks like this:
         (Edge Value, From Node Value, To Node Value)"""
+        # Start with empty list
         edge_list = []
+        # For each edge object, convert to tuple and append to list
         for edge_obj in self.edges:
             edge = (edge_obj.value, edge_obj.node_from.value,
                     edge_obj.node_to.value)
@@ -58,13 +60,17 @@ class Graph(object):
         Each section in the list will store a list
         of tuples that looks like this:
         (To Node, Edge Value)"""
+        # Need max index to know the length of the list we will create
         max_index = self.get_max_index()
         adj_list = [None] * (max_index + 1)
+        # Set "to node" values and edge values at a specific index
         for edge_obj in self.edges:
+            # Check if "from node" exists
             if adj_list[edge_obj.node_from.value]:
                 adj_list[edge_obj.node_from.value].append(
                     (edge_obj.node_to.value, edge_obj.value))
             else:
+                # If "from node" exists set the value
                 adj_list[edge_obj.node_from.value] = [
                     (edge_obj.node_to.value, edge_obj.value)]
         return adj_list
@@ -75,9 +81,16 @@ class Graph(object):
         column numbers represent to nodes.
         Store the edge values in each spot,
         and a 0 if no edge exists."""
+        # Get max index to get list length
         max_index = self.get_max_index()
-        adj_mat = [
-            [0 for i in range(max_index + 1)] for j in range(max_index + 1)]
+        adj_mat = []
+        # Create a m * n matrix
+        for m in range(max_index + 1):
+            inner = []
+            for n in range(max_index + 1):
+                inner.append(0)
+            adj_mat.append(inner)
+        # Set values from edge object
         for edge_obj in self.edges:
             adj_mat[edge_obj.node_from.value][edge_obj.node_to.value] = edge_obj.value
         return adj_mat
