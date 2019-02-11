@@ -174,7 +174,7 @@ All notes from Data Structures & Algorithms offered by Grow With Google on Udaci
   * Travels through every node in a graph at least once
   * A Hamiltonian cycle will start and end at the same node
 
-## Lesson 7: Shortest Path Algorithm
+## Lesson 7: Case Studies in Algorithms
 
 ### What is the Shortest Path Problem?
 * The shortest path in a graph is where sum of the edges in a path are as small as possible
