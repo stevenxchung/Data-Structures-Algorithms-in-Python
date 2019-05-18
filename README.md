@@ -1,6 +1,19 @@
 # Data-Structures-Algorithms-in-Python
 
-All notes from Data Structures & Algorithms offered by Grow With Google on Udacity
+All notes from Data Structures & Algorithms offered by Grow With Google on Udacity.
+
+This course covers the following topics:
+
+Lesson | Topic 
+--- | ---
+1 | Introduction and Efficiency
+2 | List-based Collections
+3 | Searching and Sorting
+4 | Maps and Hashing
+5 | Trees
+6 | Graphs
+7 | Case Studies in Algorithms
+8 | Technical Interviewing Techniques
 
 ## Lesson 1: Introduction and Efficiency
 
